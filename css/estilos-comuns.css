@@ -1,0 +1,16 @@
+img {
+  border: 4px solid limegreen;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1, h2 {
+  color: limegreen;
+}
+
+body {
+  background-image: url(../imagens/fundo.png);
+  padding: 0 20%;
+}
