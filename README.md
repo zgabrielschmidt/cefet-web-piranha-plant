@@ -45,7 +45,8 @@ nas duas páginas.
 Por exemplo, as regras da borda verde nas imagens pode estar repetida
 nos dois arquivos.
 
-Para evitar repetição de código, é possível escrever código CSS em um arquivo separado e incluí-lo em cada arquivo html. Isso se chama **refatorar**:
+Para evitar repetição de código, é possível escrever código CSS em um arquivo
+separado e incluí-lo em cada arquivo html. Isso se chama **refatorar**:
 
 - Em vez de:
   ```
@@ -75,3 +76,51 @@ exclusivas de cada página. Por exemplo, considere esta estrutura de pasta:
     - `...`
 
 ## FAQ
+
+- Qual _tag_ de citação devo usar?
+  - Há citações que ocorrem no meio de uma frase (chamamos isso de `inline`) e
+    outras que são grandes e precisam ficar separadas do parágrafo (chamamos
+    isso de `block`):
+    - Citação `inline`: usamos `<q>texto citado</q>`
+    - Citação `block`: usamos `<blockquote>texto citado</blockquote>`
+- Podemos usar o elemento **`<br>` (_break line_) para dar espaço**?
+  - Podemos, mas esta é uma **péssima prática**. Espaçamento é um conceito
+    de estilização, então deve ser feito usando CSS. Duas propriedades que
+    temos à disposição é `margin-top` e `margin-bottom`. Por exemplo:
+    - Não faça isto:
+      ```html
+      <h1>Título</h1>
+      <br>
+      <br>
+      <p>Assunto</p>
+      ```
+    - Em vez, faça isto em html e em CSS:
+      ```html
+      <h1>Título</h1>
+      <p>Assunto</p>
+      ```
+      ```css
+      h1 {
+        margin-bottom: 30px;
+      }
+      ```
+- Posso usar a _tag_ `<em></em>` para deixar as coisas em itálico?
+  - Essa não é a ideia. A _tag_ `<em></em>` serve para **marcar texto que**, de
+    alguma forma, **possui ênfase**. Por um acaso, o padrão dos navegadores é renderizá-los em itálico.
+- Os links para seções internas da página não estão funcionando.
+  - Links internos (do tipo `<a href="#secao-jaula">jaula</a>`) apontam para
+    algum elemento da página que possua um atributo `id` (identificador)
+    igual ao texto que está à direita da `#` do link:
+    ```html
+    <a href="#secao-jaula">jaula</a>
+    <!-- outros elementos da página... -->
+    <h2 id="secao-jaula">Armadilhas jaula</h2>
+    ```
+- Minhas bordas da tabela estão com um espaçamento! #comofaz?
+  - Para que as bordas de uma tabela fiquem todas "juntinhas", há uma
+    propriedade CSS:
+    ```css
+    table {
+      border-collapse: collapse;
+    }
+    ```

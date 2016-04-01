@@ -1,16 +1,15 @@
+body {
+  margin-left: 20%;
+  margin-right: 20%;
+  background-image: url(../imagens/fundo.png);
+  font-family: "Arial", sans-serif;
+}
+
 img {
   border: 4px solid limegreen;
-
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 h1, h2 {
   color: limegreen;
-}
-
-body {
-  background-image: url(../imagens/fundo.png);
-  padding: 0 20%;
+  font-family: "Times New Roman", serif;
 }
