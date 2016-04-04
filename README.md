@@ -89,6 +89,7 @@ exclusivas de cada página. Por exemplo, considere esta estrutura de pasta:
     de estilização, então deve ser feito usando CSS. Duas propriedades que
     temos à disposição é `margin-top` e `margin-bottom`. Por exemplo:
     - Não faça isto:
+    
       ```html
       <h1>Título</h1>
       <br>
@@ -96,10 +97,12 @@ exclusivas de cada página. Por exemplo, considere esta estrutura de pasta:
       <p>Assunto</p>
       ```
     - Em vez, faça isto em html e em CSS:
+    
       ```html
       <h1>Título</h1>
       <p>Assunto</p>
       ```
+      
       ```css
       h1 {
         margin-bottom: 30px;
@@ -112,6 +115,7 @@ exclusivas de cada página. Por exemplo, considere esta estrutura de pasta:
   - Links internos (do tipo `<a href="#secao-jaula">jaula</a>`) apontam para
     algum elemento da página que possua um atributo `id` (identificador)
     igual ao texto que está à direita da `#` do link:
+
     ```html
     <a href="#secao-jaula">jaula</a>
     <!-- outros elementos da página... -->
@@ -120,6 +124,7 @@ exclusivas de cada página. Por exemplo, considere esta estrutura de pasta:
 - Minhas bordas da tabela estão com um espaçamento! #comofaz?
   - Para que as bordas de uma tabela fiquem todas "juntinhas", há uma
     propriedade CSS:
+
     ```css
     table {
       border-collapse: collapse;
