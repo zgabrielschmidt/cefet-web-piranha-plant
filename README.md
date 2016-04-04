@@ -50,6 +50,7 @@ Para evitar repetição de código, é possível escrever código CSS em um arqu
 separado e incluí-lo em cada arquivo html. Isso se chama **refatorar**:
 
 - Em vez de:
+
   ```
     ...
     <style>
@@ -58,6 +59,7 @@ separado e incluí-lo em cada arquivo html. Isso se chama **refatorar**:
   </head>
   ```
 - Você pode:
+
   ```
   <link rel="stylesheet" href="arquivo-de-estilos.css">
   ```
