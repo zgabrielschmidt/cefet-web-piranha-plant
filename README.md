@@ -13,10 +13,8 @@ página web.
 ### Exercício 1
 
 Você deve pegar o documento do seu tio (arquivo:
-`/documentos-do-tio/pagina-sobre-plantas.pdf`) e criar uma página web com o
+`/documentos-do-tio/pagina-plantas-specs.pdf`) e criar uma página web com o
 mesmo conteúdo e formatação. Salve o arquivo como `plantas.html`.
-  - O arquivo `/documentos-do-tio/pagina-sobre-plantas-specs.pdf` descreve os
-  detalhes.
   - A pasta `/imagens` contém os arquivos de imagens a serem usados.
 
 Você pode ver todas as _tags_ que precisará nos slides da aula. Veja
@@ -28,13 +26,16 @@ carnívoras do tio Epaminondas:
     você deve estilizá-las para que elas façam o texto ficar em itálico).
   - A lista não-ordenada (de bolinhas) dos tipos de plantas deve conter
     links internos que fazem a página rolar para aquela seção de texto.
+
 Sobre a estilização:
   - As imagens devem ter uma borda (feita com CSS) e devem ser centralizadas.
 
 ### Exercício 2
 
-Criar a página da loja seguindo o modelo do arquivo  `/documentos-do-tio/pagina-loja.pdf`. Depois de criada, salve o arquivo como `loja.html`. Você deve também criar um hiperlink da página `plantas.html`
-para sua nova `loja.html`.
+Criar a página da loja seguindo o modelo do arquivo  
+`/documentos-do-tio/pagina-loja.pdf`. Depois de criada, salve o arquivo
+como `loja.html`. Você deve também criar um hiperlink da página `plantas.html`
+para sua nova `loja.html`, e vice-versa.
 
 ### Exercício 3
 
@@ -123,4 +124,11 @@ exclusivas de cada página. Por exemplo, considere esta estrutura de pasta:
     table {
       border-collapse: collapse;
     }
+    ```
+- Quero colocar um ícone para minha página. #comofaz?
+  - Salve uma imagem no formato `.ico` e, na página HTML, dentro
+    do `<head></head>`, coloque:
+
+    ```html
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     ```

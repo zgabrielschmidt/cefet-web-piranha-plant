@@ -13,3 +13,11 @@ h1, h2 {
   color: limegreen;
   font-family: "Times New Roman", serif;
 }
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 24px;
+}
