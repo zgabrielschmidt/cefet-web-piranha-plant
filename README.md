@@ -15,20 +15,23 @@ página web.
 Você deve pegar o documento do seu tio (arquivo:
 `/documentos-do-tio/pagina-plantas-specs.pdf`) e criar uma página web com o
 mesmo conteúdo e formatação. Salve o arquivo como `plantas.html`.
-  - A pasta `/imagens` contém os arquivos de imagens a serem usados.
+
+- A pasta `/imagens` contém os arquivos de imagens a serem usados.
 
 Você pode ver todas as _tags_ que precisará nos slides da aula. Veja
 algumas diretrizes úteis para você marcar o texto sobre as plantas
 carnívoras do tio Epaminondas:
-  - Termos **em latim** (exceto nomes próprios) devem estar enfatizados em
-    itálico (há uma _tag_ para isto).
-  - Citações devem aparecer em itálico (há duas _tags_ para citação, mas
-    você deve estilizá-las para que elas façam o texto ficar em itálico).
-  - A lista não-ordenada (de bolinhas) dos tipos de plantas deve conter
-    links internos que fazem a página rolar para aquela seção de texto.
+
+- Termos **em latim** (exceto nomes próprios) devem estar enfatizados em
+  itálico (há uma _tag_ para isto).
+- Citações devem aparecer em itálico (há duas _tags_ para citação, mas
+  você deve estilizá-las para que elas façam o texto ficar em itálico).
+- A lista não-ordenada (de bolinhas) dos tipos de plantas deve conter
+  links internos que fazem a página rolar para aquela seção de texto.
 
 Sobre a estilização:
-  - As imagens devem ter uma borda (feita com CSS) e devem ser centralizadas.
+
+- As imagens devem ter uma borda (feita com CSS) e não precisam ser centralizadas.
 
 ### Exercício 2
 
@@ -50,6 +53,7 @@ Para evitar repetição de código, é possível escrever código CSS em um arqu
 separado e incluí-lo em cada arquivo html. Isso se chama **refatorar**:
 
 - Em vez de:
+
   ```
     ...
     <style>
@@ -58,6 +62,7 @@ separado e incluí-lo em cada arquivo html. Isso se chama **refatorar**:
   </head>
   ```
 - Você pode:
+  
   ```
   <link rel="stylesheet" href="arquivo-de-estilos.css">
   ```
@@ -89,6 +94,7 @@ exclusivas de cada página. Por exemplo, considere esta estrutura de pasta:
     de estilização, então deve ser feito usando CSS. Duas propriedades que
     temos à disposição é `margin-top` e `margin-bottom`. Por exemplo:
     - Não faça isto:
+    
       ```html
       <h1>Título</h1>
       <br>
@@ -96,10 +102,12 @@ exclusivas de cada página. Por exemplo, considere esta estrutura de pasta:
       <p>Assunto</p>
       ```
     - Em vez, faça isto em html e em CSS:
+    
       ```html
       <h1>Título</h1>
       <p>Assunto</p>
       ```
+      
       ```css
       h1 {
         margin-bottom: 30px;
@@ -112,6 +120,7 @@ exclusivas de cada página. Por exemplo, considere esta estrutura de pasta:
   - Links internos (do tipo `<a href="#secao-jaula">jaula</a>`) apontam para
     algum elemento da página que possua um atributo `id` (identificador)
     igual ao texto que está à direita da `#` do link:
+    
     ```html
     <a href="#secao-jaula">jaula</a>
     <!-- outros elementos da página... -->
@@ -120,6 +129,7 @@ exclusivas de cada página. Por exemplo, considere esta estrutura de pasta:
 - Minhas bordas da tabela estão com um espaçamento! #comofaz?
   - Para que as bordas de uma tabela fiquem todas "juntinhas", há uma
     propriedade CSS:
+    
     ```css
     table {
       border-collapse: collapse;
@@ -132,3 +142,5 @@ exclusivas de cada página. Por exemplo, considere esta estrutura de pasta:
     ```html
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     ```
+
+    - Para configurar o ícone de forma que funcione da melhor forma também em _smartphones_, _tablets_ e Windows 8+, veja este [post do blog Tableless](https://tableless.com.br/favicons/)
