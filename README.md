@@ -28,7 +28,7 @@ carnívoras do tio Epaminondas:
     links internos que fazem a página rolar para aquela seção de texto.
 
 Sobre a estilização:
-  - As imagens devem ter uma borda (feita com CSS) e devem ser centralizadas.
+  - As imagens devem ter uma borda (feita com CSS) conforme especificado.
 
 ### Exercício 2
 
