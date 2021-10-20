@@ -29,7 +29,7 @@ algumas diretrizes úteis para você marcar o texto sobre as plantas
 carnívoras do tio Epaminondas:
 
 - Termos **em latim** (exceto nomes próprios) devem estar
-  enfatizados (há uma _tag_ para texto enfatizado).
+  enfatizados (há uma _tag_ para texto enfatizado, mas veja discussão no [FAQ](#faq).
 - **Citações**, que estão em inglês, devem aparecer em itálico 
   (há duas _tags_ para citação, e você deve estilizá-las para que
   elas façam o texto ficar em itálico em vez de usar a mesma 
@@ -102,9 +102,15 @@ exclusivas de cada página. Por exemplo, considere esta estrutura de pasta:
     font-style: normal; /* sem itálico, valor padrão */
     ```
 - Posso usar a **_tag_ `<em></em>`** para deixar as coisas em itálico?
-  - Essa não é a ideia. A _tag_ `<em></em>` serve para **marcar texto que**, de
-    alguma forma, **possui ênfase**. Por um acaso, o padrão dos navegadores é renderizá-los em itálico.
-  - A `<em></em>` deve ser usada com semântica (eg, "todos os termos em latim")
+  - Nesta atividade, pode sim, mas não é a ideia mais correta.
+    A _tag_ `<em></em>` serve para **marcar texto que**, de
+    alguma forma, **possui ênfase** na leitura. Por um acaso, o padrão dos navegadores
+    é renderizá-los em itálico.
+  - Fazemos a "concessão" nesta primeira atividade atribuindo uma nova semântica à `<em></em>`,
+    que é "todos os termos em latim"
+  - O mais correto para "todos os termos em latim" seria `<span class="termo-em-latim">...</span>`
+    e estilizar esses elementos com texto itálico. Mas ainda não vimos esse tal de `<span>`,
+    nem esse atributo `class="..."`
 - Qual **_tag_ de citação** devo usar?
   - Veja nos slides sobre as [_tags_ de citação][tags-de-listas])
   - Há citações que ocorrem no meio de uma frase (chamamos isso de `inline`) e
