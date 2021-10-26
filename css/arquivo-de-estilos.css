@@ -1,0 +1,57 @@
+body {
+	font-family: "Arial", sans-serif;
+	font-size: 14px;
+	margin: 0% 10%;
+}
+body.loja {
+	background-image: url("imagens/desenho-loucao.jpg");
+}
+h1 {
+	font-family: "Times New Roman", serif;
+	font-size: 28px;
+	color: limegreen;
+}
+h2 {
+	font-family: "Times New Roman", serif;
+	font-size: 22px;
+	color: limegreen;
+}
+p {
+	text-align: justify;
+}
+blockquote {
+	margin-left: 60px;
+}
+span.highlight {
+	background-color: yellow;
+}
+.gringo {
+	font-style: italic;
+}
+q {
+	font-style: italic;
+}
+p#paragrafo-especial {
+	border: solid 3px limegreen;
+	padding: 10px;
+	background-image: url("imagens/fundo.png");
+}
+img {
+	width: 300px;
+	border: solid 8px limegreen;
+	margin: auto;
+	display: block;
+}
+table {
+	text-align: center;
+	width: 600px;
+	margin: auto;
+}
+th {
+	background-color: grey;
+	color: white;
+}
+table, th, td {
+	border: solid 1px black;
+	border-collapse: collapse;
+}
